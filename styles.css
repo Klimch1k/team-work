@@ -3,17 +3,70 @@
   --accent-color: #f7941e;
   --main-bg-color: #f1f1f2;
   --secondary-bg-color: #231f20;
+  --cards-bg-color: #fafafa;
   --main-white-color: #ffffff;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/* ===========Глобальні стилі============ */
 body {
   background-color: #f1f1f2;
+  font-family: "Roboto", sans-serif;
 }
 
-/* .btn {
-  font-family: "Gilroy", sans-serif;
-  font-size: 18px;
+h1,
+h2,
+h3,
+ul,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+/* =========Класи утиліти============ */
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 15px 0 15px;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.link:hover,
+.link:focus {
+  color: var(--accent-color);
+}
+
+.title {
+  font-size: 32px;
   line-height: 1.2;
+
+  margin-bottom: 24px;
+}
+
+.subtitle {
+  font-size: 18px;
+  line-height: 1.35;
+}
+.button {
+  font-size: 18px;
+  line-height: calc(22 / 18);
   text-transform: uppercase;
 
   color: var(--accent-color);
@@ -23,11 +76,64 @@ body {
   border-radius: 5px;
 }
 
-.btn-secondary {
+.button:hover,
+.button:focus {
+  border-width: 3px;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+/* ========HERO STYLES=========== */
+
+.hero-title {
+  font-size: 56px;
+  line-height: calc(69 / 56);
+
+  color: var(--main-text-color);
+}
+
+.hero-text {
+  font-size: 20px;
+  line-height: calc(28 / 20);
+  color: var(--main-text-color);
+}
+
+.hero-button {
   color: var(--main-white-color);
   background-color: var(--accent-color);
 }
-.btn:hover,
-.btn:focus{
 
-} */
+/* ======gifts-examples====== */
+.gifts-examples {
+  padding: 96px 0 120px;
+  background-color: var(--main-white-color);
+}
+.gifts-examples-title,
+.gifts-examples-subtitle {
+  text-align: center;
+}
+.gifts-examples-subtitle {
+  margin-bottom: 57px;
+}
+.gifts-examples-list {
+  display: flex;
+}
+.card-title {
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 1.15;
+  margin-bottom: 74px;
+}
+.card-description {
+  padding: 24px;
+}
+.gifts-examples-item {
+  max-width: calc(100% / 4);
+  background-color: var(--cards-bg-color);
+}
+.gifts-examples-item:not(:last-child) {
+  margin-right: 30px;
+}
+.gifts-examples-item:hover {
+  background-color: var(--main-white-color);
+  filter: drop-shadow(10px 10px 15px rgba(0, 0, 0, 0.05));
+}
