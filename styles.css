@@ -7,8 +7,9 @@
 }
 
 body {
-  background-color: #f1f1f2;
+  background-color: #f1f1f2; font-family: "Roboto", sans-serif;
 }
+
 
 .hero-title {
   font-size: 56px;
@@ -31,3 +32,30 @@ body {
   color: var(--main-white-color);
   background-color: var(--accent-color)
 }
+
+
+/* .btn {
+  font-family: "Gilroy", sans-serif;
+  font-size: 18px;
+  line-height: 1.2;
+  text-transform: uppercase;
+
+  color: var(--accent-color);
+  background-color: transparent;
+  padding: 23px 24px 15px 25px;
+  border-color: var(--accent-color);
+  border-radius: 5px;
+}
+
+.btn-secondary {
+  color: var(--main-white-color);
+  background-color: var(--accent-color);
+}
+.btn:hover,
+.btn:focus{
+
+} */
+
+
+
+
